@@ -16,21 +16,21 @@ const OrderList=()=>{
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">1</th>
+                        <th scope="row" ><Link className="d-flex justify-content-center" to="/edit-order">1</Link></th>
                         <td>01/01/2022</td>
                         <td>Santa Marta</td>
                         <td>Cll 1-151-30</td>
                         <td>Guardado</td>
                     </tr>
                     <tr>
-                        <th scope="row">2</th>
+                        <th scope="row"><Link className="d-flex justify-content-center" to="/edit-order">2</Link></th>
                         <td>01/01/2022</td>
                         <td>Santa Marta</td>
                         <td>Cll 1-151-30</td>
                         <td>Guardado</td>
                     </tr>
                     <tr>
-                        <th scope="row">3</th>
+                        <th scope="row"><Link className="d-flex justify-content-center" to="/edit-order">3</Link></th>
                         <td>01/01/2022</td>
                         <td>Santa Marta</td>
                         <td>Cll 1-151-30</td>

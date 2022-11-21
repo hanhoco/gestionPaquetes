@@ -49,7 +49,7 @@ function RegOrden() {
               <Col md="auto">
               <Form.Control id="input1" placeholder="" />
               </Col>                                 
-              <Form.Label id="input2" column md="auto">Peso (gr):</Form.Label>
+              <Form.Label id="input2" column md="auto">Peso (grs):</Form.Label>
               <Col md="auto">
               <Form.Control id="input1" placeholder="" />
               </Col>
