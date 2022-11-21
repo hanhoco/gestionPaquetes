@@ -4,10 +4,10 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import Logout from './LogoutButton';
 import Hora2 from './Time';
 import Fecha2 from './Date';
 import Card from 'react-bootstrap/Card';
+import { Link } from "react-router-dom";
 
 function FormEdit() {
   return (
@@ -16,14 +16,15 @@ function FormEdit() {
     <Container>
       <Card border="dark" card-expand-lg>
         <Card.Header>
-        <Card.Title id="cardT" >GESTION DE PAQUETES - Registro de Ordenes (Recogida) </Card.Title>
+        <Card.Title id="cardT" >GESTION DE PAQUETES - Actualización de Órdenes (Recogida) </Card.Title>
           </Card.Header>
         <Card.Body>
         <Card.Text>
           <Form>
             <Form.Group as={Row} className="mb-3 justify-content-end" controlId="formEditDim">
               <Col md="auto">
-              <Logout/>
+              <Link className="d-flex justify-content-end" to="/Login">Cerrar sesión</Link>
+              
               </Col>
             </Form.Group>
             <Form.Group as={Row} className="mb-3 justify-content-center" controlId="formEditDirRec">
@@ -52,7 +53,7 @@ function FormEdit() {
           
           
             <Form.Group as={Row} className="mb-4 align-items-center justify-content-center" controlId="formEditPME">
-              <Form.Label column md="auto">Peso (kgs):</Form.Label>
+              <Form.Label column md="auto">Peso (grs):</Form.Label>
               <Col md="1">
               <Form.Control id="editPeso" placeholder="00,00" />
               </Col>
@@ -113,10 +114,10 @@ function FormEdit() {
             <fieldset>
               <Row className="mb-4 justify-content-end">
                 <Col md="auto">
-                  <Button href="#" type="cancelar">Cancelar</Button>
+                  <Button href="/order-list" type="cancelar">Cancelar</Button>
                 </Col>
                 <Col md="auto">
-                  <Button href="#" type="actualizar">Actualizar Orden</Button>
+                  <Button href="/order-list" type="actualizar">Actualizar Orden</Button>
                 </Col>
               </Row>
             </fieldset>
