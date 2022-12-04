@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Hora2 from './Time';
 import Fecha2 from './Date';
 import Card from 'react-bootstrap/Card';
-import { Link } from "react-router-dom";
+
 
 function FormEdit() {
   return (
@@ -21,12 +21,7 @@ function FormEdit() {
         <Card.Body>
         <Card.Text>
           <Form>
-            <Form.Group as={Row} className="mb-3 justify-content-end" controlId="formEditDim">
-              <Col md="auto">
-              <Link className="d-flex justify-content-end" to="/Login">Cerrar sesión</Link>
-              
-              </Col>
-            </Form.Group>
+            
             <Form.Group as={Row} className="mb-3 justify-content-center" controlId="formEditDirRec">
               <Col md="auto">
               <Form.Label> Fecha : <Fecha2/> </Form.Label>
